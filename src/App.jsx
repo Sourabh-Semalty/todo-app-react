@@ -108,11 +108,11 @@ function App() {
 
         <div className="todo_list_container">
           <div className="todo_list_info">
-            <div className="tood_list_left_info">
+            <div className="todo_list_left_info">
               <span className="task_created_label">Task created </span>
               <span className="task_created_count">{tasks.length}</span>
             </div>
-            <div className="tood_list_right_info">
+            <div className="todo_list_right_info">
               <span className="task_created_label">Completed </span>
               <span className="task_created_count">
                 {tasks.filter((task) => task.completed).length} out of{" "}
@@ -125,7 +125,7 @@ function App() {
             {tasks.length > 0 ? (
               tasks.map((task) => {
                 return (
-                  <div className="todo_item">
+                  <div key={task.id} className="todo_item">
                     <span
                       className="todo_item_icon"
                       onClick={() => handleTask(task.id)}
@@ -139,8 +139,8 @@ function App() {
                     <span
                       className={
                         task.completed
-                          ? "todo_item_desciption line-through"
-                          : "todo_item_desciption"
+                          ? "todo_item_description line-through"
+                          : "todo_item_description"
                       }
                     >
                       {task.description}

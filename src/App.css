@@ -79,20 +79,20 @@ main .todo_list_info {
   margin-top: 40px;
 }
 
-main .todo_list_info .tood_list_left_info .task_created_label {
+main .todo_list_info .todo_list_left_info .task_created_label {
   font-size: 14px;
   color: #4ea8de;
   font-weight: 500;
 }
 
-main .todo_list_info .tood_list_right_info .task_created_label {
+main .todo_list_info .todo_list_right_info .task_created_label {
   font-size: 14px;
   color: #8284fa;
   font-weight: 500;
 }
 
-main .todo_list_info .tood_list_left_info .task_created_count,
-main .todo_list_info .tood_list_right_info .task_created_count {
+main .todo_list_info .todo_list_left_info .task_created_count,
+main .todo_list_info .todo_list_right_info .task_created_count {
   background-color: #262626;
   color: #d9d9d9;
   font-size: 12px;
@@ -117,7 +117,7 @@ main .todo_list_items .todo_item {
   background-color: #262626;
 }
 
-main .todo_list_items .todo_item .todo_item_desciption {
+main .todo_list_items .todo_item .todo_item_description {
   font-size: 14px;
   display: inline-block;
   color: #f2f2f2;
@@ -126,7 +126,7 @@ main .todo_list_items .todo_item .todo_item_desciption {
   flex: 1;
 }
 
-main .todo_list_items .todo_item .todo_item_desciption.line-through {
+main .todo_list_items .todo_item .todo_item_description.line-through {
   text-decoration: line-through;
   color: #808080;
 }
@@ -155,4 +155,30 @@ main .todo_list_empty {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Custom Scrollbar Styles for Chrome, Safari, Edge */
+main .todo_list_items::-webkit-scrollbar {
+  width: 8px;
+}
+
+main .todo_list_items::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 4px;
+}
+
+main .todo_list_items::-webkit-scrollbar-thumb {
+  background: #4ea8de;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+main .todo_list_items::-webkit-scrollbar-thumb:hover {
+  background: #5e60ce;
+}
+
+/* Custom Scrollbar Styles for Firefox */
+main .todo_list_items {
+  scrollbar-width: thin;
+  scrollbar-color: #4ea8de #1a1a1a;
 }

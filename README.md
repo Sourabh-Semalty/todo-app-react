@@ -1,12 +1,84 @@
-# React + Vite
+# 📝 Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive todo application built with React and Vite. Manage your daily tasks with a clean, intuitive interface and persistent storage.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Add Tasks**: Quickly add new tasks with input validation
+- **Mark Complete**: Toggle task completion with visual feedback
+- **Delete Tasks**: Remove tasks you no longer need
+- **Persistent Storage**: Your tasks are saved locally and persist between sessions
+- **Task Counter**: Track total tasks and completion progress
+- **Toast Notifications**: Get instant feedback on your actions
+- **Dark Theme**: Easy on the eyes with a modern dark interface
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **Custom Scrollbar**: Styled scrollbar that matches the app theme
 
-## Expanding the ESLint configuration
+## 🚀 What This App Gives You
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Productivity**: Stay organized and track your daily tasks efficiently
+- **Simplicity**: Clean, distraction-free interface focused on what matters
+- **Reliability**: Local storage ensures your tasks are never lost
+- **Instant Feedback**: Real-time validation and notifications
+- **Modern UX**: Smooth interactions with hover effects and transitions
+- **Accessibility**: Keyboard-friendly and screen reader compatible
+
+## 🛠️ Technologies Used
+
+- **React 18** - Modern React with hooks
+- **Vite** - Fast build tool and dev server
+- **React Icons** - Beautiful, consistent icons
+- **React Toastify** - Elegant toast notifications
+- **CSS3** - Custom styling with modern features
+- **Local Storage API** - Client-side data persistence
+
+## 🏃‍♂️ Getting Started
+
+1. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+2. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+
+3. **Build for production**:
+   ```bash
+   npm run build
+   ```
+
+4. **Preview production build**:
+   ```bash
+   npm run preview
+   ```
+
+## 💡 How to Use
+
+1. **Add a Task**: Type your task in the input field and click "Add Task" or press Enter
+2. **Complete a Task**: Click the circle icon next to a task to mark it as complete
+3. **Delete a Task**: Click the trash icon to remove a task permanently
+4. **Track Progress**: View your task count and completion status at the top
+
+## 🎨 Features in Detail
+
+### Input Validation
+- Prevents empty tasks
+- Requires minimum 3 characters
+- Shows helpful error messages
+
+### Visual Feedback
+- Completed tasks show strikethrough text
+- Hover effects on interactive elements
+- Color-coded status indicators
+- Smooth animations and transitions
+
+### Data Persistence
+- Tasks automatically saved to browser's local storage
+- Data persists between browser sessions
+- No server required - works completely offline
+
+---
+
+**Built with ❤️ using React and Vite**
